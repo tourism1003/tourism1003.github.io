@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自動滑動選單位置</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wei-Outerframe {
+            width: 100vw;
+        }
+
+        .wei-Outerframe .left-content {
+            width: 25%;
+            height: 100vh;
+            background: #ffffff;
+            overflow: hidden;
+            position: fixed;
+        }
+
+        .left-content .wei-menu {
+            list-style: none;
+            margin: 2px;
+        }
+
+        .left-content .wei-menu:hover {
+            cursor: pointer;
+        }
+
+        .left-content .wei-menu .menubtn {
+            color: #777;
+            opacity: 0.5;
+            margin: 10px;
+        }
+
+        .left-content .wei-menu .menubtn.active {
+            color: #1b2a49;
+            opacity: 1;
+            margin: 10px;
+        }
+
+        .wei-Outerframe .right-content {
+            width: 75%;
+            overflow: auto;
+            position: absolute;
+            right: 0;
+        }
+
+        .wei-Outerframe .right-content .wei-wrapper {
+            height: 100vh;
+            width: 100%;
+            border-bottom: 1px solid rgb(185, 179, 179);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wei-Outerframe">
+        <div class="left-content">
+            <ul id="menu" class="wei-menu">
+                <li class="menubtn active">
+                    <a href="#section-1">red block</a></li>
+                <li class="menubtn">
+                    <a href="#section-2">green block</a>
+                </li>
+                <li class="menubtn">
+                    <a href="#section-3">blue block</a>
+                </li>
+                <li class="menubtn">
+                    <a href="#section-4">black block</a>
+                </li>
+                <li class="menubtn"><a href="#footer">orange block</a></li>
+            </ul>
+        </div>
+        <div class="right-content">
+            <div id="section-1" class="wei-wrapper" style="background: red;"></div>
+            <div id="section-2" class="wei-wrapper" style="background: green;"></div>
+            <div id="section-3" class="wei-wrapper" style="background:blue ;"></div>
+            <div id="section-4" class="wei-wrapper" style="background: black;"></div>
+            <div id="footer" class="wei-wrapper" style="background: orange;"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <script>
+
+        window.onload = function () {
+
+            $(window).scroll(function () {
+                var currentscrollTop = $(window).scrollTop();
+                // console.log(currentscrollTop);
+                
+                var remove_active = function () {
+                    $('#menu').find('li.active').toggleClass('active');
+                }
+
+
+
+                if (currentscrollTop == $("#section-1").offset().top && currentscrollTop < $("#section-2").offset().top) {
+                    remove_active()
+                    $('#menu').find('li').eq(0).toggleClass('active');
+                } else if (($("#section-2").offset().top -10) <= currentscrollTop && currentscrollTop < $("#section-3").offset().top) {
+                    remove_active()
+                    $('#menu').find('li').eq(1).toggleClass('active');
+                } else if (($("#section-3").offset().top -10) <= currentscrollTop && currentscrollTop < $("#section-4").offset().top) {
+                    remove_active()
+                    $('#menu').find('li').eq(2).toggleClass('active');
+                } else if (($("#section-4").offset().top -10) <= currentscrollTop && currentscrollTop < $("#footer").offset().top) {
+                    remove_active()
+                    $('#menu').find('li').eq(3).toggleClass('active');
+                } else if (($("#footer").offset().top -20) <= currentscrollTop) {
+                    remove_active()
+                    $('#menu').find('li').eq(4).toggleClass('active');
+                }
+            }
+            );
+
+
+
+
+            
+            $('#menu li').click(function () {
+                var _index = $(this).index();
+                var _item = "";
+                switch (_index) {
+                    case 0:
+                        _item = "#section-1"
+                        break;
+                    case 1:
+                        _item = "#section-2"
+                        break;
+                    case 2:
+                        _item = "#section-3"
+                        break;
+                    case 3:
+                        _item = "#section-4"
+                        break;
+                    case 4:
+                        _item = "#footer"
+                        break;
+                }
+                $('html, body').animate({
+                    scrollTop: $(_item).offset().top
+                }, 600);
+            })
+        }
+
+    </script>
+</body>
+
+</html>

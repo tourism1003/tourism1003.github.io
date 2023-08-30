@@ -1,0 +1,14 @@
+.swiper-container {
+    width: calc(100% - 50px);
+    height: 800px;
+    cursor: e-resize;
+    float: right;
+}
+
+.swiper-slide img{
+    background-size: contain;
+}
+
+.section-1{
+    width: ;
+}

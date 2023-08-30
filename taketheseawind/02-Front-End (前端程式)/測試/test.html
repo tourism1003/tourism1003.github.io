@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-1 .card {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .section-1 .img {
+            width: 400px;
+            
+            background-color: blue;
+            order: 1;
+        }
+
+        .section-1 .card:nth-child(2) .text {
+            background-color: cornflowerblue;
+            order: 1;
+        }
+
+        .section-1 .text {
+            width: 500px;
+            background-color: orange;
+        }
+
+        /* Q ： 字或圖片，如果沒有下高度的話，
+        會影響到 position: absolute > bottom 設定，
+        而且也會在畫面繼續往左縮小時，文字框顯示的方式會很奇怪 變成是慢慢由下往上長 
+        vs 內容是用文字 或圖片去撐高度*/
+
+        @media (max-width: 1500px) {
+            .section-1 {
+                display: flex;
+                flex-wrap: wrap;
+                width: 900px;
+                background-color: cyan;
+            }
+            
+            .section-1 .card {
+                background-color: darkgoldenrod;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .section-1 .card .img {
+                width: 450px;
+                height: 450px;
+                background-color: darkgray;
+            }
+
+            .section-1 .card:nth-child(1) .img{
+                width: 900px;
+            }
+            .section-1 .card .text {
+                width: 450px;
+                background-color: darkgreen;
+                position: absolute;
+                bottom: -65%;
+            }
+
+            .section-1 .card:hover .text{
+                bottom: 0;
+            }
+
+            .section-1 .card:nth-child(1) .text {
+                width: 450px;
+                left: 225px;
+                /* transform:translateX(50%); */
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .section-1 {
+                display: unset;
+                flex-wrap: unset;
+            }
+
+            .section-1 .card .img {
+                width: 100%;
+            }
+
+            .section-1 .card .text {
+                width: 100%;
+                bottom: -25%;
+            }
+
+            .section-1 .card:nth-child(1) .img {
+                width: 100%;
+            }
+
+            .section-1 .card:nth-child(1) .text{
+                width: 100%;
+                left: 0;
+            }
+        }
+
+        .section-2 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 900px;
+            background-color: cyan;
+            margin: 50px 0;
+        }
+
+        .section-2 .card {
+            background-color: darkgoldenrod;
+            position: relative;
+        }
+
+        .section-2 .card:nth-child(1) .img {
+            width: 900px;
+        }
+
+        .section-2 .card .img {
+            width: 450px;
+            height: 450px;
+            background-color: darkgray;
+        }
+
+        .section-2 .card .text {
+            width: 450px;
+            height: 200px;
+            background-color: darkgreen;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .section-2 .card:nth-child(1) .text {
+            width: 450px;
+            left: 225px;
+            /* transform:translateX(50%); */
+        }
+
+        @media (max-width: 1200px) {
+            .section-2 {
+                display: unset;
+                flex-wrap: unset;
+                margin: 50px 0;
+            }
+
+            .section-2 .card .img {
+                width: 100%;
+            }
+
+            .section-2 .card .text {
+                width: 100%;
+            }
+
+            .section-2 .card:nth-child(1) .img {
+                width: 100%;
+            }
+
+            .section-2 .card:nth-child(1) .text{
+                width: 100%;
+                left: 0;
+            }
+        }
+
+        .section-3 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 900px;
+            background-color: cyan;
+        }
+
+        .section-3 .card {
+            background-color: darkgoldenrod;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-3 .card:nth-child(1) .img {
+            width: 900px;
+        }
+
+        .section-3 .card .img {
+            width: 450px;
+            height: 450px;
+            background-color: darkgray;
+        }
+
+        .section-3 .card .text:hover{
+            bottom: 0px;
+        }
+
+        .section-3 .card .text {
+            width: 450px;
+            height: 200px;
+            background-color: darkgreen;
+            position: absolute;
+            bottom: -100px;
+            
+        }
+
+        .section-3 .card:nth-child(1) .text {
+            width: 450px;
+            left: 225px;
+            /* transform:translateX(50%); */
+        }
+
+        @media (max-width: 1200px) {
+            .section-3 {
+                display: unset;
+                flex-wrap: unset;
+            }
+
+            .section-3 .card .img {
+                width: 100%;
+            }
+
+            .section-3 .card .text {
+                width: 100%;
+            }
+
+            .section-3 .card:nth-child(1) .img {
+                width: 100%;
+            }
+
+            .section-3 .card:nth-child(1) .text{
+                width: 100%;
+                left: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="section-1">
+        <div class="card">
+            <div class="img">img111</div>
+            <div class="text">指南一項我國像是很多人我就提示訊息有點遠交易接口建立感興趣，活動科學許可防治歌詞好像領導收費採用，姐姐列表藥品走進，連載整理零售自然逐漸人體記憶陽光改造，禮品男性生物，不久女生有一些在這個內地地上在他提示來源寫出來證明龍岡，承認小姐努力旅遊左右世紀有人工資男女聰明轉讓方面，黃金更好她們案件第三醫藥地位我真而已夫人特點台鐵觀眾申請，公里實現案件購買根本相關內容水果原料股份必然，反對項目分配丈夫，願意那位大約三年，完整依據少女家長選擇走了補充阿摩斯，數碼相機台北黑暗機構加油感謝，流程國語以來壓力改變所謂桃園，長沙我說把你整理公開分析學科犯罪家族事務，不明白我很尤其事業新鮮，而是鑒定一部承受說到詳細，是我圖文工業高達又有加快，相關上下這次東方，刷新烏日總部英雄數字分類美女堅決地址改革玄幻全面小心再說，頁面來電往往羅東彷彿，人類傳輸就業，我要具體本次此刻保持開始望着頻道聯繫山西，留言板客人，而來領導制度排名這段圖片經過一年，去了活動猶豫查找點點關心重大不良名單一會兒夫妻成為規定，五金圖像化一口必要厲害這是品質民眾窗口，黑色對不起便宜三星道德，空間住宅力道現象，回去卻是機場，管理員關西大賽，價。</div>
+        </div>
+        <div class="card">
+            <div class="img">img222</div>
+            <div class="text">指南一項我國像是很多人我就提示訊息有點遠交易接口建立感興趣，活動科學許可防治歌詞好像領導收費採用，姐姐列表藥品走進，連載整理零售自然逐漸人體記憶陽光改造，禮品男性生物，不久女生有一些在這個內地地上在他提示來源寫出來證明龍岡，承認小姐努力旅遊左右世紀有人工資男女聰明轉讓方面，黃金更好她們案件第三醫藥地位我真而已夫人特點台鐵觀眾申請，公里實現案件購買根本相關內容水果原料股份必然，反對項目分配丈夫，願意那位大約三年，完整依據少女家長選擇走了補充阿摩斯，數碼相機台北黑暗機構加油感謝，流程國語以來壓力改變所謂桃園，長沙我說把你整理公開分析學科犯罪家族事務，不明白我很尤其事業新鮮，而是鑒定一部承受說到詳細，是我圖文工業高達又有加快，相關上下這次東方，刷新烏日總部英雄數字分類美女堅決地址改革玄幻全面小心再說，頁面來電往往羅東彷彿，人類傳輸就業，我要具體本次此刻保持開始望着頻道聯繫山西，留言板客人，而來領導制度排名這段圖片經過一年，去了活動猶豫查找點點關心重大不良名單一會兒夫妻成為規定，五金圖像化一口必要厲害這是品質民眾窗口，黑色對不起便宜三星道德，空間住宅力道現象，回去卻是機場，管理員關西大賽，價。</div>
+        </div>
+        <div class="card">
+            <div class="img">img333</div>
+            <div class="text">指南一項我國像是很多人我就提示訊息有點遠交易接口建立感興趣，活動科學許可防治歌詞好像領導收費採用，姐姐列表藥品走進，連載整理零售自然逐漸人體記憶陽光改造，禮品男性生物，不久女生有一些在這個內地地上在他提示來源寫出來證明龍岡，承認小姐努力旅遊左右世紀有人工資男女聰明轉讓方面，黃金更好她們案件第三醫藥地位我真而已夫人特點台鐵觀眾申請，公里實現案件購買根本相關內容水果原料股份必然，反對項目分配丈夫，願意那位大約三年，完整依據少女家長選擇走了補充阿摩斯，數碼相機台北黑暗機構加油感謝，流程國語以來壓力改變所謂桃園，長沙我說把你整理公開分析學科犯罪家族事務，不明白我很尤其事業新鮮，而是鑒定一部承受說到詳細，是我圖文工業高達又有加快，相關上下這次東方，刷新烏日總部英雄數字分類美女堅決地址改革玄幻全面小心再說，頁面來電往往羅東彷彿，人類傳輸就業，我要具體本次此刻保持開始望着頻道聯繫山西，留言板客人，而來領導制度排名這段圖片經過一年，去了活動猶豫查找點點關心重大不良名單一會兒夫妻成為規定，五金圖像化一口必要厲害這是品質民眾窗口，黑色對不起便宜三星道德，空間住宅力道現象，回去卻是機場，管理員關西大賽，價。</div>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <div class="card">
+            <div class="img">img111</div>
+            <div class="text">text111</div>
+        </div>
+        <div class="card">
+            <div class="img">img222</div>
+            <div class="text">text222</div>
+        </div>
+        <div class="card">
+            <div class="img">img333</div>
+            <div class="text">text333</div>
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div class="card">
+            <div class="img">img111</div>
+            <div class="text">text111</div>
+        </div>
+        <div class="card">
+            <div class="img">img222</div>
+            <div class="text">text222</div>
+        </div>
+        <div class="card">
+            <div class="img">img333</div>
+            <div class="text">text333</div>
+        </div>
+    </section>
+</body>
+
+</html>

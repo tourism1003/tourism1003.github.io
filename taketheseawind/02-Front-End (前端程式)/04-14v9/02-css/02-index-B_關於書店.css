@@ -1,0 +1,212 @@
+.section-1-card{
+    width: 100%;
+    height: 29vh;
+}
+
+.section-1-card .img{
+    width: 30%;
+}
+
+.section-1-card .text-mask{
+    background-color: #B3E5FC;
+    width: 70%;
+    margin: 0 0 0 30px;
+}
+
+.section-2-card{
+    width: 100%;
+    height: 29vh;
+    margin: 30px 0 30px 0;
+}
+
+.section-2-card .img{
+    width: 30%;
+}
+
+.section-2-card .text-mask{
+    background-color: #B3E5FC;
+    width: 70%;
+    margin: 0 30px 0 0;
+}
+
+.section-3-card{
+    width: 100%;
+    height: 29vh;
+}
+
+.section-3-card .img{
+    width: 30%;
+}
+
+.section-3-card .text-mask{
+    background-color: #B3E5FC;
+    width: 70%;
+    margin: 0 0 0 30px;
+}
+
+@media ( max-width:1280px) {
+    .section-1-card{
+        height: 46vh;
+        position: relative;
+        overflow: hidden;
+        float:left;
+    }
+
+    .section-1-card .text-mask{
+        width: 50%;
+        position: absolute;
+        margin: unset;
+        bottom: -215px;
+        left: 25%;
+        height: 60%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .section-1-card .text-mask h1{
+        text-align: center;
+        color: white;
+    }
+
+    .section-1-card .text-mask li{
+        color: bisque;
+    }
+
+    .section-1-card .img{
+        width: 100%;
+        
+    }
+
+    .section-1-card .img:hover .text-mask{
+        bottom: 0;
+    }
+
+    .section-2-card{
+        width: 50%;
+        height: 46vh;
+        position: relative;
+        overflow: hidden;
+        margin: unset;
+        float:left;
+    }
+
+    .section-2-card .img{
+        width: 100%;
+    }
+
+    .section-2-card .text-mask{
+        width: 100%;
+        position: absolute;
+        margin: unset;
+        height: 60%;
+        bottom: -215px;
+        margin: unset;
+    }
+
+    .section-2-card .text-mask h1{
+        text-align: center;
+    }
+    
+    .section-3-card{
+        width: 50%;
+        height: 46vh;
+        position: relative;
+        overflow: hidden;
+        margin: unset;
+        float:left;
+    }
+
+    .section-3-card .img{
+        width: 100%;
+    }
+
+    .section-3-card .text-mask{
+        width: 100%;
+        position: absolute;
+        margin: unset;
+        bottom: -215px;
+        height: 60%;
+    }
+
+    .section-3-card .text-mask h1{
+        text-align: center;
+    }
+}
+
+@media ( max-width:768px) {
+    #section-1{
+        height: unset;
+    }
+    
+    .section-1-card{
+        height: unset;
+        position: unset;
+        overflow: unset;
+        float:unset;
+        display: flex;
+        flex-direction:column;
+    }
+
+    .section-1-card .text-mask{
+        width: 100%;
+        position: unset;
+        bottom: unset;
+        left: unset;
+    }
+
+    .section-1-card .text-mask h1{
+        text-align: left;
+    }
+
+    .section-1-card .text-mask li{
+        color: bisque;
+    }
+
+    .section-1-card .img{
+        width: 100%;
+    }
+
+    .section-1-card .img:hover .text-mask{
+        bottom: unset;
+    }
+
+    .section-2-card{
+        width: 100%;
+        height: unset;
+        position: unset;
+        overflow: unset;
+        float:unset;
+        display: flex;
+        flex-direction:column-reverse;
+    }
+
+    .section-2-card .text-mask{
+        width: 100%;
+        position: unset;
+        bottom: unset;
+        left: unset;
+    }
+
+    .section-2-card .text-mask h1{
+        text-align: left;
+    }
+    .section-3-card{
+        width: 100%;
+        height: unset;
+        position: unset;
+        overflow: unset;
+        float:unset;
+        display: flex;
+        flex-direction:column;
+    }
+
+    .section-3-card .text-mask{
+        width: 100%;
+        position: unset;
+        bottom: unset;
+        left: unset;
+    }
+
+    .section-3-card .text-mask h1{
+        text-align: left;
+    }
+}

@@ -1,0 +1,119 @@
+body{
+  overflow-x:hidden;
+}
+
+main {
+  background-color: black;
+}
+
+a,
+a:hover,
+a:focus{
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.wrapper{
+  display: flex;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar{
+  /* min-width: 250px; */
+  /* max-width: 250px; */
+  transition: all 0.3s;
+}
+
+#sidebar .active{
+  margin: 0 -250px 0 0;
+}
+
+#sidebar ul.components{
+  padding: 20px 0;
+}
+
+#sidebar ul li a{
+  padding: 10px;
+  display: block;
+}
+
+#siderbar ul li a:hover{
+  color: #ADADAD;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"]{
+  color: #D4B768;
+}
+
+a[data-toggle="collapse"]{
+  position: relative;
+}
+
+#content{
+  width: 100%;
+  padding: 25px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+@media (max-width:768px){
+  #sidebar {
+    margin: 0 0 0 -200px;
+  }
+  #sidebar.active{
+    margin: 0;
+  }
+
+  #accordionExample{
+    margin: 0 0 0 40px;
+  }
+
+  #sidebarCollapse span {
+    display: none;
+  }
+
+  .card-body img{
+    width: 100%;
+  }
+
+  footer .nav-link{
+    border-right: solid 1px white !important;
+  }
+
+  footer .nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .span{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.btn-link{
+  color: #D4B768;
+}
+
+.btn-link:hover{
+  color: #ADADAD;
+}
+
+footer a,
+footer a:hover,
+footer a:focus {
+  color: black;
+}
+
+footer .nav-link{
+  border-right: solid 1px black;
+  margin: 10px 0;
+}
+
+footer .nav-link:nth-child(5){
+  border-right: unset;
+}
+

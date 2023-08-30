@@ -1,0 +1,43 @@
+.swiper-container {
+    width: calc(100% - 50px);
+    height: 800px;
+    cursor: pointer;
+    float: right;
+}
+
+.swiper-slide img{
+    background-size: contain;
+}
+
+.section-container{
+    width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: violet;
+}
+
+.section-1{
+    width: calc(100% - 50px);
+    height: 100vh;
+    float: right;
+    background-color: yellowgreen;
+}
+@media ( max-width:1280px){
+    .swiper-container{
+        width: 100%;
+        float: unset;
+    }
+
+    .section-1{
+        width: 100%;
+        height: 100vh;
+        float: none;
+    }
+
+}
+
+@media ( max-width:1140px){
+    .section-container{
+        width: 100%;
+    }
+}

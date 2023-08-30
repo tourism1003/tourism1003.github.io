@@ -1,0 +1,210 @@
+.background-size-cover{
+    background-size: cover;
+}
+
+.text-align-justify{
+    text-align:justify;
+}
+
+.text-padding-0-30px{
+    padding: 0 30px;
+}
+
+.mask{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.opacity{
+    opacity:0.7;
+}
+
+/* Banner ： 使用 Swiper 套件 */
+.swiper-container {
+    height: 800px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+}
+
+@media ( max-width:1280px){
+    .swiper-container{
+        height: 758px;
+    }
+}
+
+@media ( max-width:1140px){
+    .swiper-container{
+        height: 675px;
+    }
+}
+
+@media ( max-width:768px){
+    .swiper-container{
+        height: 455px;
+    }
+}
+
+/* 關於書店 */
+.section-1 .card-1{
+    width: 100%;
+    height: 32%;
+    background-color: #B3E5FC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-1 .card-1  img{
+    width: 30%;
+    height: 100%;
+}
+
+.section-1 .card-1 .text{
+    width: 70%;
+    background-color: #B3E5FC;
+}
+
+.section-1 .card-2{
+    width: 100%;
+    height: 32%;
+    background-color: #B3E5FC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-1 .card-2  img{
+    width: 30%;
+    height: 100%;
+}
+
+.section-1 .card-2 .text{
+    width: 70%;
+    height: 100%;
+}
+
+@media ( max-width:1280px){
+    .section-1 .card-1{
+        height: 50%;
+    }
+
+    .section-1 .card-1  img{
+        width: 100%;
+    }
+    
+    .section-1 .card-1 .text{
+        width: 100%;
+    }
+
+    .section-1 .card-2{
+        width: 50%;
+        height: 50%;
+        
+    }
+}
+
+@media ( max-width:1140px){
+    
+}
+
+@media ( max-width:768px){
+    
+}
+
+/* 書店活動 */
+.nav-2{
+    height: 150px;
+    background-color: #013D64;
+    display: flex;
+}
+
+.nav-2-btn{
+    width: 150px;
+    height: 100px;
+    background-color: #597D6E;
+    line-height: 100px;
+    text-align:center;
+    color: white;
+    margin: 25px 30px 25px 0;
+}
+
+.nav-2-btn.active{
+    line-height: 93px;
+    background-color: #8A732F;
+    border: solid 3px white;
+}
+
+.nav-2-contain{
+    height: calc(100% - 150px);
+    background-color: yellow;
+}
+
+.nav-2-contain .nav-2-tab{
+    background-color: aquamarine;
+    display: none;
+}
+
+.nav-2-contain .nav-2-tab.active{
+    display: block;
+}
+
+.nav-2-contain .nav-2-tab .section-2-card{
+    width: 25%;
+    background-color:#B3E5FC;
+}
+
+.nav-2-contain .nav-2-tab .section-2-card .section-2-img{
+    height: 30%;
+    background-color: orchid;
+}
+
+.nav-2-contain .nav-2-tab .section-2-card .section-2-text{
+    height: 70%;
+}
+@media ( max-width:1280px){
+    
+}
+
+@media ( max-width:1140px){
+    .nav-2{
+        height: 100px;
+    }
+    
+    .nav-2-btn{
+        width: 100px;
+        height: 80px;
+        margin: 10px 30px 10px 0;
+        line-height: 80px;
+    }
+
+    .nav-2-btn.active{
+        line-height: 75px;
+    }
+}
+
+@media ( max-width:768px){
+    
+}
+
+/* 關注議題 */
+.section-3{
+    background-image: url("https://live.staticflickr.com/65535/49764621947_2b59cabf0c_o.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.section-parallax-card{
+    width: 1000px;
+    height: 562.5px;
+}
+
+.section-3-img{
+    width: 30%;
+    height: 100%;
+}
+
+.section-3-text{
+    width: 70%;
+    height: 100%;
+    background-color: #B3E5FC;
+}
+

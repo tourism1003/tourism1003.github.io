@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://www.kssogo.com.tw/index.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/f.txt"></script><script type="text/javascript" async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/js"></script><script src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/584240718684256" async=""></script><script async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/fbevents.js.下載"></script><script type="text/javascript" async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/analytics.js.下載"></script><script type="text/javascript" async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/f.txt"></script><script type="text/javascript" async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/analytics.js.下載"></script><script type="text/javascript" async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/analytics.js.下載"></script><script async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/gtm.js.下載"></script><script type="text/javascript" async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/ga.js.下載"></script><script async="" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/js(1)"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36771529-1');
+</script>
+
+
+<meta property="og:image" content="https://www.kssogo.com.tw/m/images/m_fb_pic.jpg">
+<meta name="description" content="溫柔笑容  熱情態度  敏捷服務">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung</title>
+<link href="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/reset.css" rel="stylesheet" type="text/css">
+<link href="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<link href="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/layout.css" rel="stylesheet" type="text/css">
+<link href="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/home.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/style.css">
+<script src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/SpryMenuBar.js.下載" type="text/javascript"></script>
+<script src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/jquery.min.js.下載"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+<script type="text/javascript">
+        var $213 = $;
+</script>
+<script src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/jquery-1.8.3.js.下載"></script>
+<script type="text/javascript">
+        var $183 = $;
+</script>
+     <script type="text/javascript">
+        console.log($171.fn.jquery);
+        console.log($183.fn.jquery);
+    </script>
+<!--<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="js/home.js" type="text/javascript"></script>-->
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+	<!--判斷是否為裝置瀏覽-->
+	<script src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/check.js.下載"></script>
+    
+    
+
+
+    
+    
+    
+    
+<script type="text/javascript">
+$(function(){
+	// 先取得 div#abgne_marquee ul
+	// 接著把 ul 中的 li 項目再重覆加入 ul 中(等於有兩組內容)
+	// 再來取得 div#abgne_marquee 的高來決定每次跑馬燈移動的距離
+	// 設定跑馬燈移動的速度及輪播的速度
+	var $marqueeUl = $('div#abgne_marquee ul'),
+		$marqueeli = $marqueeUl.append($marqueeUl.html()).children(),
+		_height = $('div#abgne_marquee').height() * -1,
+		scrollSpeed = 500,
+		timer,
+		speed = 3000 + scrollSpeed;
+ 
+	// 幫左邊 $marqueeli 加上 hover 事件
+	// 當滑鼠移入時停止計時器；反之則啟動
+	$marqueeli.hover(function(){
+		clearTimeout(timer);
+	}, function(){
+		timer = setTimeout(showad, speed);
+	});
+ 
+	// 控制跑馬燈移動的處理函式
+	function showad(){
+		var _now = $marqueeUl.position().top / _height;
+		_now = (_now + 1) % $marqueeli.length;
+ 
+		// $marqueeUl 移動
+		$marqueeUl.animate({
+			top: _now * _height
+		}, scrollSpeed, function(){
+			// 如果已經移動到第二組時...則馬上把 top 設 0 來回到第一組
+			// 藉此產生不間斷的輪播
+			if(_now == $marqueeli.length / 2){
+				$marqueeUl.css('top', 0);
+			}
+		});
+ 
+		// 再啟動計時器
+		timer = setTimeout(showad, speed);
+	}
+ 
+	// 啟動計時器
+	timer = setTimeout(showad, speed);
+ 
+	$('a').focus(function(){
+		this.blur();
+	});
+});
+</script>       
+    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36771529-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+    </script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-532FHMM');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<style data-styled="" data-styled-version="4.2.0"></style><script src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/f(1).txt"></script><script src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/f(2).txt"></script></head>
+
+<body>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-532FHMM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<div id="header">
+
+  <div id="nav"> <a href="https://www.kssogo.com.tw/index.htm"><img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/logo.png"></a>   
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li id="Menu"><a class="MenuBarItemSubmenu" href="https://www.kssogo.com.tw/html/b.html">樓層導覽</a>
+   	   <ul id="aaa">
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/b.html">樓層介紹</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/food1.html">美食饗宴</a></li>
+       </ul>
+     </li>
+    <li id="Menu"><a href="https://www.kssogo.com.tw/html/c_1.html">活動訊息</a></li>
+    <li id="Menu"><a class="MenuBarItemSubmenu" href="https://www.kssogo.com.tw/html/d_1.html">卡友專區</a>
+      <ul id="aaa">
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/d_1.html">聯名卡友</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/d_2.html">SmartCard會員卡</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/d_2_2.html">廣三SOGO APP</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/d_3.html">瑞比兔俱樂部</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/d_4.html">電子發票</a></li>
+        <!--<li id="bbb"><a href="html/d_5.html">富邦紅利點數</a></li>-->
+        </ul>
+      </li>
+    <li id="Menu"><a class="MenuBarItemSubmenu" href="https://www.kssogo.com.tw/html/e_1.html">客服資訊</a>
+      <ul id="aaa">
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/e_1.html">貼心服務</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/e_2.html">聯絡我們</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/e_3.html">交通/停車資訊</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/e_4.html">失物查詢</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/e_5.html">常見問題</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/e_6.html">退稅服務</a></li>
+        </ul>
+      </li>
+    <!--<li id="Menu"><a href="html/f.html">電子報</a></li>-->
+    <li id="Menu"><a class="MenuBarItemSubmenu" href="https://www.kssogo.com.tw/html/g.html">線上DM</a>
+    <ul id="aaa">
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/g.html">瀏覽DM</a></li>
+        <li id="bbb"><a href="https://www.kssogo.com.tw/html/f.html">訂閱電子報</a></li>
+        </ul>
+    </li>
+    </ul>
+   <!-- <Iframe src="http://web.kssogo.com.tw/search/index1.php"; width="153" height="30" scrolling="no" frameborder="0"></iframe>-->
+  </div>
+</div>
+
+<div class="slider">
+	<ul class="slides" style="width: 5709px; transform: translate3d(-3806px, 0px, 0px);">
+    
+    
+    <!--<li class="slide">
+      <div class="box"><a href="https://www.kssogo.com.tw/html/c_announ.html"><img src="images/index/20190110/03_w.jpg" style="width:100%"></a></div>
+    </li>-->
+
+
+    
+    <!--<li class="slide">
+      <div class="box"><a href="https://www.kssogo.com.tw/aspnet_client/card/2020/index.html" target="new"><img src="images/index/20200423/01_w.jpg" style="width:100%"></a></div>
+    </li>-->
+    <li class="slide" style="width: 1903px;">
+      <div class="box"><img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/01_w.jpg" style="width:100%"></div>
+    </li>
+    
+    <li class="slide" style="width: 1903px;">
+      <div class="box"><img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/02_w.jpg" style="width:100%"></div>
+    </li>
+
+    <li class="slide" style="width: 1903px;">
+      <div class="box"><img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/06_w.jpg" style="width:100%"></div>
+    </li>
+    
+    
+    <!--<li class="slide">
+      <div class="box"><img src="images/index/20200325/02_w.jpg" style="width:100%"></div>
+    </li>-->
+           
+    <!--<li class="slide">
+      <div class="box"><img src="images/index/20200109/SCend-web.jpg" style="width:100%"></div>
+    </li>-->
+
+    <!--<li class="slide">
+      <div class="box"><img src="images/index/20200220/03_w.jpg" style="width:100%"></div>
+    </li>-->
+    
+    
+    
+    <!--<li class="slide">
+      <div class="box"><a href="https://www.instagram.com/kssogo_tw/?hl=zh-tw"><img src="images/index/20190809/05_w.jpg" style="width:100%"></a></div>
+    </li>-->
+    
+    <!--<li class="slide">
+      <div class="box"><img src="images/index/20190809/04_w.jpg" style="width:100%"></div>
+    </li>
+    <li class="slide">
+      <div class="box"><img src="images/index/20190809/03_w.jpg" style="width:100%"></div>
+    </li>-->
+    
+
+    
+
+    
+   <!--<li class="slide">
+      <div class="box"><img src="images/index/20190523/03_w.jpg" style="width:100%"></div>
+    </li>-->
+    
+
+	</ul>
+<div class="arrowsWrapper"><a href="https://www.kssogo.com.tw/index.htm#" class="slider-arrow slider-arrow--right" data-distance="1"></a><a href="https://www.kssogo.com.tw/index.htm#" class="slider-arrow slider-arrow--left" data-distance="-1"></a></div><div class="slider-nav" style="left: 50%; width: 0px; margin-left: -960px;"><a href="https://www.kssogo.com.tw/index.htm#" class="slider-nav__item" data-distance="0"></a><a href="https://www.kssogo.com.tw/index.htm#" class="slider-nav__item" data-distance="1"></a><a href="https://www.kssogo.com.tw/index.htm#" class="slider-nav__item slider-nav__item--current" data-distance="2"></a></div></div>
+
+<div id="sidebar">
+<div class="regular">
+    <ul>
+      <li class="brand1">
+      	<a href="https://www.kssogo.com.tw/html/c_1.html" onmouseout="document.img1.src=&#39;images/index/icon_1.png&#39;" onmouseover="document.img1.src=&#39;images/index/icon_11.png&#39;">
+                                <img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/icon_1.png" name="img1"></a>
+      </li>
+      <li class="brand2">
+      	<a href="https://www.kssogo.com.tw/html/c_2.html" onmouseout="document.img2.src=&#39;images/index/icon_2.png&#39;" onmouseover="document.img2.src=&#39;images/index/icon_22.png&#39;">
+                                <img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/icon_2.png" name="img2"></a>
+      </li>
+      <li class="brand3">
+      	<a href="https://www.kssogo.com.tw/html/c_3.html" onmouseout="document.img3.src=&#39;images/index/icon_3.png&#39;" onmouseover="document.img3.src=&#39;images/index/icon_33.png&#39;">
+                                <img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/icon_3.png" name="img3"></a>
+      </li>
+      <li class="brand4">
+      <a href="https://www.facebook.com/kssogo/" target="_blank" onmouseout="document.img4.src=&#39;images/index/icon_4.png&#39;" onmouseover="document.img4.src=&#39;images/index/icon_44.png&#39;">
+                                				 <img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/icon_4.png" name="img4"></a>
+        </li>
+      
+      <!--<li class="brand5">
+      <a href="https://www.kssogo.com.tw/sc/scindex.html" target="_blank" onMouseOut="document.img5.src='images/index/icon_5.png'"
+														 onMouseOver="document.img5.src='images/index/icon_55.png'">
+                                				 		 <img src="images/index/icon_5.png" name="img5"></a>
+        </li>-->
+      
+      <li class="brand6">
+      <a href="https://scinv.kssogo.com.tw/" target="_blank" onmouseout="document.img6.src=&#39;images/index/icon_6.png&#39;" onmouseover="document.img6.src=&#39;images/index/icon_66.png&#39;">
+                                				 		 <img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/icon_6.png" name="img6"></a>
+        </li>
+      
+    </ul>
+  </div>
+ </div>
+<div id="notice">
+  <div id="Marquee">
+  <img src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/notice.png">
+    <div id="abgne_marquee">
+      <ul style="top: 0px;">
+        <!--<li><iframe src="http://emergency.qov.tw" width="700" height="25" frameborder="0" style="border:0" scrolling="no"allowfullscreen></iframe></li>-->
+        <!--<li><a href="#">【官方網站、APP維護公告】3/9(一)23:00~3/10(二)9:00定期維護，暫停服務，造成不便敬請見諒。</a></li>-->
+        
+        <li><a>公告：配合政府相關防疫措施，即日起廣三SOGO於各出入口及通道皆備有手部消毒器，所有館內第一線服務人員皆配戴口罩，</a></li>
+        <li><a>公告：手扶梯與電梯定時消毒，並且館內定期消毒，廣三SOGO百貨與您共同為防疫努力。</a></li>
+
+        <!--<li><a>提醒：2019年Smart Card點數使用期限至2020/2/29(六)止，逾期歸零，請盡速使用完畢！</a></li>-->
+        <!--<li><a>公告：1F廣場【小小世界鐘】定期維護中，暫停服務，造成不便，敬請見諒！</a></li>-->
+        <!--<li><a href="html/c_1_5.html">聖誕好禮週週抽>></a></li>-->
+        <!--<li><a href="html/c_1_7.html">聖誕節愛心圓夢計畫>></a></li>-->
+        <!--<li><a href="html/c_beauty.html">Smart Card壽星美麗禮</a></li>-->
+
+        <!--<li><a href="html/c_1_6.html">聯名卡生日禮</a></li>-->
+        
+        
+        
+        <!--<li><iframe src="http://emergency.qov.tw" width="700" height="25" frameborder="0" style="border:0" scrolling="no"allowfullscreen></iframe></li>-->
+        <!--<li><a href="#">【官方網站、APP維護公告】3/9(一)23:00~3/10(二)9:00定期維護，暫停服務，造成不便敬請見諒。</a></li>-->
+        
+        <li><a>公告：配合政府相關防疫措施，即日起廣三SOGO於各出入口及通道皆備有手部消毒器，所有館內第一線服務人員皆配戴口罩，</a></li>
+        <li><a>公告：手扶梯與電梯定時消毒，並且館內定期消毒，廣三SOGO百貨與您共同為防疫努力。</a></li>
+
+        <!--<li><a>提醒：2019年Smart Card點數使用期限至2020/2/29(六)止，逾期歸零，請盡速使用完畢！</a></li>-->
+        <!--<li><a>公告：1F廣場【小小世界鐘】定期維護中，暫停服務，造成不便，敬請見諒！</a></li>-->
+        <!--<li><a href="html/c_1_5.html">聖誕好禮週週抽>></a></li>-->
+        <!--<li><a href="html/c_1_7.html">聖誕節愛心圓夢計畫>></a></li>-->
+        <!--<li><a href="html/c_beauty.html">Smart Card壽星美麗禮</a></li>-->
+
+        <!--<li><a href="html/c_1_6.html">聯名卡生日禮</a></li>-->
+        
+        
+        </ul>
+      </div>
+  </div>
+</div>
+<div id="footer">
+  <div id="footer_m">
+    <div id="footer_l">
+    <div id="footer_la"><a href="https://www.kssogo.com.tw/html/a.html">關於我們</a></div>
+    <div id="footer_lb"><a href="https://www.kssogo.com.tw/html/o_1.html">禮劵專區</a></div>
+    <div id="footer_lc"><a href="https://www.kssogo.com.tw/html/o_2.html">廠商專區</a></div>
+    <div id="footer_ld"><a href="https://www.104.com.tw/company/5vnpzq0?jobsource=checkc&amp;page=1#info06" target="_blank">人才招募</a></div>
+    <div id="footer_le"><a href="https://www.kssogo.com.tw/html/o_3.html">文教基金會</a></div>
+    </div>
+    <div id="footer_r">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：台中市西區臺灣大道二段459號&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代表號：04-2323-3788<br>營業時間：週一至週五 AM 11:00~PM 10:00　例假日 AM 10:30~PM 10:00<br>版權所有 © KSSOGO TAICHUNG All rights reserved</div>
+  </div>
+</div>
+<script src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/jquery.min.js(1).下載"></script>
+<script type="text/javascript" src="./歡迎蒞臨廣三SOGO百貨 - Welcome to SOGO taichung_files/jquery.glide.min.js.下載"></script>
+<script type="text/javascript">
+			var glide = $('.slider').glide({
+					//autoplay:true,//是否自動播放 默認值 true如果不需要就設置此值
+					animationTime:500, //動畫過度效果，只有當瀏覽器支持CSS3的時候生效
+					arrows:true, //是否顯示左右導航器
+					arrowsWrapperClass: "arrowsWrapper",//滑塊箭頭導航器外部DIV類名
+					arrowMainClass: "slider-arrow",//滑塊箭頭公共類名
+					arrowRightClass:"slider-arrow--right",//滑塊右箭頭類名
+					arrowLeftClass:"slider-arrow--left",//滑塊左箭頭類名
+					arrowRightText:"",//定義左右導航器文字或者符號也可以是類
+					arrowLeftText:"",
+
+					nav:true, //主導航器也就是本例中顯示的小方塊
+					navCenter:true, //主導航器位置是否居中
+					navClass:"slider-nav",//主導航器外部div類名
+					navItemClass:"slider-nav__item", //本例中小方塊的樣式
+					navCurrentItemClass:"slider-nav__item--current" //被選中後的樣式
+				});	
+	</script>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","584240718684256");fbq("set","agent","tmgoogletagmanager","584240718684256");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=584240718684256&amp;ev=PageView&amp;noscript=1"></noscript>
+</body></html>

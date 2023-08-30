@@ -1,0 +1,180 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #E9EBEE;
+    cursor:context-menu;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// SVG Percentage doughnut
+@keyframes donut-chart-fill {
+    to {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.svg-item {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+
+    .donut-ring {
+        stroke: #EBEBEB;
+    }
+
+    .donut-segment-1 {
+        animation: donut-chart-fill 1s reverse ease-in;
+        transform-origin: center;
+        stroke: #d50000;
+    }
+
+    .donut-segment-2 {
+        animation: donut-chart-fill 1s reverse ease-in;
+        transform-origin: center;
+        stroke: #2962ff;
+    }
+    
+    .donut-segment-3 {
+        animation: donut-chart-fill 1s reverse ease-in;
+        transform-origin: center;
+        stroke: #ffab00;
+    }
+
+    .donut-segment-5 {
+        animation: donut-chart-fill 1s reverse ease-in;
+        transform-origin: center;
+        stroke: #00bfa5;
+    }
+
+    .donut-segment-6 {
+        animation: donut-chart-fill 1s reverse ease-in;
+        transform-origin: center;
+        stroke: #00c853;
+    }
+
+    .donut-text {
+        font-family: Arial, Helvetica, sans-serif;
+
+        .donut-percent-1 {
+            font-size: 0.5em;
+            fill: #f44336;
+            line-height: 1;
+            transform: translateY(0.5em);
+        }
+
+        .donut-percent-2 {
+            font-size: 0.5em;
+            fill: #2196f3;
+            line-height: 1;
+            transform: translateY(0.5em);
+        }
+
+        .donut-percent-3 {
+            font-size: 0.5em;
+            fill: #ffca28;
+            line-height: 1;
+            transform: translateY(0.5em);
+        }
+
+        .donut-percent-5 {
+            font-size: 0.5em;
+            fill: #009688;
+            line-height: 1;
+            transform: translateY(0.5em);
+        }
+
+        .donut-percent-6 {
+            font-size: 0.5em;
+            fill: #4caf50;
+            line-height: 1;
+            transform: translateY(0.5em);
+        }
+    }
+}
+
+// swiper.js with RWD Effect
+.swiper-container {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    .swiper-slide {
+        width: auto !important;
+
+        .card {
+            border-radius: 50px;
+            background: white;
+            overflow: hidden;
+
+            .card__img {
+                display: block;
+                width: 100%;
+                -o-object-fit: cover;
+                   object-fit: cover;
+                border-radius: 50px;
+            }
+              
+              .card__body {
+                padding: 15px 20px;
+                font-weight: 600;
+                text-align: center;
+
+                h3 {
+                    font-size: 1.25rem;
+                    line-height: 1.5;
+                }
+
+                span {
+                    display: block;
+                    font-size: 1rem;
+                    color: #f44336;
+                }
+            }
+        }
+    }
+}
+
+// Netflix Style Hover Effect
+.swiper-slide{
+    display: flex;
+    margin: 130px 0;
+}
+
+.card{
+    position: relative;
+  display: block;
+  flex: 1 1 0px;
+  transition: transform 500ms;
+}
+
+.swiper-slide:focus-within .card,
+.swiper-slide:hover .card {
+  transform: translateX(-25%);
+}
+
+.card:focus ~ .card,
+.card:hover ~ .card {
+  transform: translateX(25%);
+}
+
+.swiper-slide .card:focus,
+.swiper-slide .card:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+body {
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+}
+// Netflix Style Hover Effect

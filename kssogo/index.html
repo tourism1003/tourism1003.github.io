@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.kssogo.com.tw/images/logo.png" height="63" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            樓層導覽
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="javascript:;">樓層介紹</a>
+                            <a class="dropdown-item" href="javascript:;">美食饗宴</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:;">活動訊息</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="javascript:;" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            卡友專區
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item active" href="#crossover">聯名卡友</a>
+                            <a class="dropdown-item" href="javascript:;">Smart Card會員卡</a>
+                            <a class="dropdown-item" href="javascript:;">廣三SOGO APP</a>
+                            <a class="dropdown-item" href="javascript:;">瑞比兔俱樂部</a>
+                            <a class="dropdown-item" href="javascript:;">電子發票</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            客服資訊
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="javascript:;">貼心服務</a>
+                            <a class="dropdown-item" href="javascript:;">聯絡我們</a>
+                            <a class="dropdown-item" href="javascript:;">交通/停車資訊</a>
+                            <a class="dropdown-item" href="javascript:;">失物查詢</a>
+                            <a class="dropdown-item" href="javascript:;">常見問題</a>
+                            <a class="dropdown-item" href="javascript:;">退稅服務</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            線上DM
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="javascript:;">瀏覽DM</a>
+                            <a class="dropdown-item" href="javascript:;">訂閱電子報</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="banner">
+            <img src="https://www.kssogo.com.tw/images/floor_top/topimage7.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="wrapper">
+                    <nav id="sidebar">
+                        <ul class="lisst-unstyled components">
+                            <li class="nav-btn active">
+                                <a href="#crossover">聯名卡友</a>
+                            </li>
+                            <li class="nav-btn">
+                                <a href="javascript:;">Smart Card會員卡</a>
+                            </li>
+                            <li class="nav-btn">
+                                <a href="javascript:;">廣三SOGO APP</a>
+                            </li>
+                            <li class="nav-btn">
+                                <a href="javascript:;">瑞比兔俱樂部</a>
+                            </li>
+                            <li class="nav-btn">
+                                <a href="javascript:;">電子發票</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="content">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <button type="button" id="sidebarCollapse" class="btn">
+                                    <img src="https://www.kssogo.com.tw/images/title/99.png" alt="" width="50%">
+                                </button>
+                            </div>
+                        </nav>
+                        <div id="crossover" class="container-area">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                新戶刷卡禮
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <img src="https://www.kssogo.com.tw/images/d/page_1_10_2.png"
+                                                alt=""><br><br>
+                                            活動時間：109/1/1(三)~109/6/30(二)<br>
+                                            活動辦法：新戶申辦廣三SOGO聯名卡正卡，核卡後30天內一般消費達以下門檻享好禮2選1<br>
+                                            【好禮一】不限金額任刷3筆或累積滿2,000元，送廣三SOGO禮券300元。<br>
+                                            【好禮二】累積滿8,000元，送城市商旅20吋行李箱乙個。<br>
+                                            注意事項：<br>
+                                            1.活動期間：即日起至109/6/30止。<br>
+                                            2.本活動需於109/6/30(含)前進件，且於109/7/31(含)前核卡者始符合參加資格。<br>
+                                            3.新戶定義：申請日起前6個月內未持有任一張富邦信用卡正卡者。<br>
+                                            4.一般消費定義：不包含自動加值儲值金、基金申購及代扣、預借現金(含餘額代償及各項預借
+                                            現金專案)本金及利息、聯合信用卡中心小額支付平台特約商店、學雜費、公路監理資費、各
+                                            項規費、各類稅款、醫療院所費用、醫指付、電子化繳稅費平台、公務機關信用卡繳費平台、
+                                            各事業單位費用（水費、電費、瓦斯費、電信費、路邊停車費）、便利商店消費、全聯福利
+                                            中心消費、循環息、分期利息、遲延利息、違約金、及其他一切與信用卡相關之手續費，
+                                            如：年費、掛失費、國外交易手續費、緊急替代卡費用、各項繳款作業平台所收取之手續費
+                                            等。<br>
+                                            5.本活動消費金額依核卡後30天內實際消費淨額(扣除退貨金額)計算，正、附卡消費合併計算，
+                                            每歸戶限兌換乙次。<br>
+                                            6.「廣三SOGO禮券300元」兌換券將隨新卡一同寄發，遺失恕不補發，兌換期限自109/1/1至
+                                            109/9/30止，請憑本人之「廣三SOGO聯名卡+信用卡帳單或同卡號消費簽單+兌換券」至
+                                            廣三SOGO百貨卡友服務中心兌換，兌換券逾期未兌換視同放棄。<br>
+                                            7.行李箱預計自109/3起依核卡順序陸續寄送至正卡持卡人信用卡帳單地址，贈品不得轉讓、
+                                            轉售或要求退換其它贈品。<br>
+                                            8.以上幣別均為新臺幣。<br>
+                                            9.活動詳情請見台北富邦銀行官網，本行保留隨時變更及終止本活動之權利。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                獨享回饋禮
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <img src="https://www.kssogo.com.tw/images/d/page_1_1.png" alt=""><br><br>
+                                            <span style="color: #D4B768;">購物累積禮券回饋</span><br>
+                                            1.持廣三SOGO聯名卡於廣三SOGO百貨半年內刷卡消費滿60,000元起，即送廣三SOGO禮券<br>
+                                            (109年上半年109/1/1~109/6/30，下半年109/7/1~109/12/31以入帳日為準，
+                                            恕不跨年累計)<br>
+                                            2.半年內購物刷卡累計<br>
+                                            ＊滿60,000元送廣三SOGO禮券300元<br>
+                                            ＊滿100,000元送廣三SOGO禮券600元<br>
+                                            ＊滿200,000元送廣三SOGO禮券1600元<br>
+                                            ＊鈦金卡獨享滿300,000元送廣三SOGO禮券3000元<br>
+                                            註：<br><br>
+                                            1.符合禮券贈送資格之貴賓,將由廣三SOGO百貨將以簡訊告知,並載明禮券領取時間、
+                                            地點及方式<br>(詳細活動方式請洽廣三SOGO百貨12F卡友服務中心)。<br>
+                                            2.上半年日期為1/1~6/30；下半年日期為7/1~12/31，恕不得跨年累計。<br>
+                                            3.卡友刷卡消費若辦理分期，則以每月實際入銀行帳款為主，未滿該門檻金額，
+                                            恕不得兌換禮券。<br>
+                                            4.18F華威影城恕不參加此活動。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                聰明消費刷
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <img src="https://www.kssogo.com.tw/images/d/page_1_2.png" alt=""><br><br>
+                                            <span style="color: #D4B768;">紅利抵現金購物輕鬆刷</span><br>
+                                            活動時間：109/1/1(三)~109/12/31(四)<br>
+                                            持聯名卡於廣三SOGO館內消費，每1000點紅利可折抵30元，<br>
+                                            最高上限可折抵當次消費金額之100%！<br>
+                                            注意事項：<br>
+                                            ★ 欲使用點數折抵刷卡消費金額者,請於結帳前告知銷售人員<br>
+                                            ★ 以上摺抵金額及點數均由系統直接換算,無法人工指定折抵某特定點數或金額<br>
+                                            ★ 最小紅利折抵點數單位為1000點,且點數之計算不含當次交易所產生之紅利點數<br>
+                                            ★ 即時折抵優惠與分期交易不得同時併用<br>
+                                            ★ 台北富邦銀行保留修改活動內容之權利
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseFour" aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                                卡友折扣禮
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <img src="https://www.kssogo.com.tw/images/d/page_1_3.png" alt=""><br><br>
+                                            持廣三SOGO聯名卡於館內刷卡消費,可享一般商品享9折，
+                                            折扣期間8折部份商品可再享95折購物優惠。<br>
+                                            (部分專櫃、商品除外，以現場告示為主)<br>
+                                            (以上優惠適用於新品上市期間，換季折扣、特價品不再享有優惠，
+                                            活動內容如有變更以現場告示為準，恕不另行通知)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseFive" aria-expanded="false"
+                                                aria-controls="collapseFive">
+                                                停車優惠
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <img src="https://www.kssogo.com.tw/images/d/page_1_4.png" alt=""><br><br>
+                                            不分卡別第1小時享免費停車；<br>
+                                            第2小時起，白金卡及鈦金卡需憑『館內當日不限金額聯名卡簽單加發票』或
+                                            『扣富邦紅利點數30點乙次』始可享以下停車優惠。<br>
+                                            鈦金卡停車優惠平日4小時、假日3小時(含第1小時免費停車)<br>
+                                            白金卡停車優惠3小時(含第1小時免費停車)<br>
+                                            注意事項：<br>
+                                            1. 限停廣三SOGO本館地下停車場。<br>
+                                            2. 每卡每日限使用乙次聯名卡停車優惠，合併店內其他停車優惠每日上限6小時。<br>
+                                            3. 停車優惠日期：109/1/1(三)~109/12/31(四)止。<br>
+                                            4. 18F華威影城恕不適用。<br>
+                                            5. 紅利點數扣點，限正卡持卡人本人使用。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingSix">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseSix" aria-expanded="false"
+                                                aria-controls="collapseSix">
+                                                禮賓好康
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <img src="https://www.kssogo.com.tw/images/d/page_1_5.png" alt=""><br><br>
+                                            持廣三SOGO聯名卡享不定期卡友來店禮、刷卡禮及卡友招待會等專屬活動。<br>
+                                            (活動辦法請參閱廣三SOGO百貨當期宣傳DM或網站訊息)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingSeven">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseSeven" aria-expanded="false"
+                                                aria-controls="collapseSeven">
+                                                生日禮遇
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <img src="https://www.kssogo.com.tw/images/d/page_1_6.png" alt=""><br><br>
+                                            生日當月刷卡禮卡友生日當月於館內刷廣三SOGO聯名卡消費單筆300元，
+                                            即可憑廣三SOGO卡+簽帳單+身份證至12F卡友服務中心領取生日來店禮乙份<br>
+                                            (每人每卡限領乙份，贈品以現場為準，未帶證件或跨月份恕無法兌換)<br>
+                                            ※18F華威影城恕不參加此活動
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingEight">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseEight" aria-expanded="false"
+                                                aria-controls="collapseEight">
+                                                Q & A
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <img src="https://www.kssogo.com.tw/images/d/page_1_7.png" alt=""><br><br>
+                                            Q：如何申辦廣三SOGO聯名卡？<br>
+                                            A：年滿20歲、年收入在25萬元以上者，請攜帶身份證、財力證明文件<br>
+                                            (如近三個月薪資轉帳存摺)至12F卡友服務中心辦理。<br>
+
+                                            Q：廣三SOGO聯名卡需要任何費用嗎？必須開卡才能使用嗎？<br>
+                                            A：完全不需要費用，可透過電話或至台北富邦銀行官網做線上開卡。<br>
+
+                                            Q：廣三SOGO聯名卡有什麼優惠嗎？<br>
+                                            A：有。<br>
+                                            【優惠一】＊廣三SOGO聯名卡可享免費1小時停車優惠(限停本館)，
+                                            鈦金卡最高享4小時停車優惠<br>
+                                            【優惠二】廣三SOGO百貨刷卡消費，可享一般商品享9折，折扣期間部份商品8折，
+                                            可再享95折購物優惠。(部分專櫃、商品除外)＊廣三SOGO百貨刷卡消費，
+                                            還可享部份專櫃卡友專屬特別優惠(優惠內容請參見廣三SOGO聯名卡書面申請書)<br>
+                                            【優惠三】＊不定期都有卡友來店刷卡禮、卡友優惠活動＊流行新知不定期最新DM訊息<br>
+                                            【優惠四】專屬卡友特約商店折扣優惠(詳情請參閱廣三SOGO聯名卡申請書或
+                                            台北富邦銀行官網)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingNine">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#collapseNine" aria-expanded="false"
+                                                aria-controls="collapseNine">
+                                                <a href="https://ebank.taipeifubon.com.tw/EXT/common/CAC/Index.faces?&fromUrl=https://www.fubon.com/banking/personal/index.htm&fromNo=001"
+                                                    style="color: #D4B768;">
+                                                    立即辦卡
+                                                </a>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="smartcard" class="container-area">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xl-6">
+                    <nav class="nav">
+                        <a class="nav-link" href="javascript:;">關於我們</a>
+                        <a class="nav-link" href="javascript:;">禮券專區</a>
+                        <a class="nav-link" href="javascript:;">廠商專區</a>
+                        <a class="nav-link" href="javascript:;">人才招募</a>
+                        <a class="nav-link" href="javascript:;">文教基金會</a>
+                    </nav>
+                </div>
+                <div class="col-md-12 col-xl-6 span">
+                    <span>地&emsp;&emsp;址：台中市西區臺灣大道二段459號</span>&emsp;
+                    <span>代表號：04-2323-3788</span><br>
+                    <span>營業時間：週一至週五 AM 11:00~PM 10:00</span>&ensp;
+                    <span>例假日 AM 10:30~PM 10:00</span><br>
+                    <span>版權所有 © KSSOGO TAICHUNG All rights reserved</span>
+                </div>
+                <div class="col-12" style="text-align: center;padding: 10px;">
+                    此網頁純做面試使用，無任何商業營利行為。 洪瑋駿 2020/05/27
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

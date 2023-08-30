@@ -1,0 +1,42 @@
+.section-3{
+    background-image: url("https://live.staticflickr.com/65535/49764621947_2b59cabf0c_o.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.section-parallax-card{
+    width: 700px;
+    height: 432px;
+}
+
+.section-3-img{
+    width: 30%;
+    height: 100%;
+}
+
+.section-3-text{
+    width: 70%;
+    height: 100%;
+    background-color: #DED9C3;
+}
+
+@media ( max-width:1500px) {
+    .section-parallax-card{
+        width: 546px;
+        height: 337px;
+    }
+}
+
+@media ( max-width:1280px) {
+    .section-parallax-card{
+        width: 466px;
+        height: 288px;
+    }
+}
+
+@media ( max-width:1140px) {
+    .section-parallax-card{
+        width: 415px;
+        height: 256px;
+    }
+}

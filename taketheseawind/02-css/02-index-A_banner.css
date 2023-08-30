@@ -1,0 +1,43 @@
+/* Banner ： 使用 Swiper 套件 */
+.swiper-container {
+    height: 800px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+}
+
+.swiper-pagination-bullet{
+    width: 20px !important;
+    height: 20px !important;
+    background:orange !important;
+    border-radius: 10px !important;
+    opacity: 0.5;
+  }
+  .swiper-pagination-bullet-active{
+    width: 50px !important;
+    opacity: 1 !important;
+  }
+
+@media ( max-width:1500px){
+    .swiper-container{
+        height: 625px;
+    }
+}
+@media ( max-width:1280px){
+    .swiper-container{
+        height: 533px;
+    }
+}
+
+@media ( max-width:1140px){
+    .swiper-container{
+        height: 475px;
+    }
+}
+
+@media ( max-width:768px){
+    .swiper-container{
+        height: 320px;
+    }
+}

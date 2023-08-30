@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-index</title>
+
+    <link rel="stylesheet" href="./02-css/01-template-A_nav+scrolltop.css">
+    <link rel="stylesheet" href="./02-css/01-template-C_footer.css">
+    <link rel="stylesheet" href="./02-css/01-template-B_button.css">
+    <link rel="stylesheet" href="./02-css/02-index-A_banner.css">
+    <link rel="stylesheet" href="./02-css/02-index-B_關於書店.css">
+    <link rel="stylesheet" href="./02-css/02-index-C_書店串聯.css">
+    <link rel="stylesheet" href="./02-css/02-index-D_關注議題.css">
+    <link rel="stylesheet" href="./02-css/02-index-E_書店菜單.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav-1">
+            <div class="nav-container margin-0-auto">
+                <div class="logo cursor-pointer">
+                    <img src="https://live.staticflickr.com/65535/49756307122_b10626fdb5_o.png" alt="01-logo.png"
+                        class="h-100 border-radius">
+                </div>
+                <button id="hamburger" class="hamburger" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <ul id="menu" class="menu">
+                    <li class="active">
+                        <a href="#section-1" style="text-decoration:none;">
+                            <div class="button border-radius">關於書店</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section-2" style="text-decoration:none;">
+                            <div class="button border-radius">書展串聯</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section-3" style="text-decoration:none;">
+                            <div class="button border-radius">關注議題</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section-4" style="text-decoration:none;">
+                            <div class="button border-radius">書店菜單</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer" style="text-decoration:none;">
+                            <div class="button border-radius">找到書店</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Swiper 輪播-->
+        <div id="swiper" class="swiper-container w-100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://live.staticflickr.com/65535/49760025487_d8383e741a_o.jpg" alt="03-banner_01.jpg"
+                        class="w-100 h-100 background-size-cover">
+                </div>
+                <div class="swiper-slide"><img src="https://live.staticflickr.com/65535/49759831641_4dfc732191_o.jpg"
+                        alt="03-banner_02.jpg" class="w-100 h-100 background-size-cover">
+                </div>
+                <div class="swiper-slide"><img src="https://live.staticflickr.com/65535/49760158962_40166e9a6e_o.jpg"
+                        alt="03-banner_03.jpg" class="w-100 h-100 background-size-cover">
+                </div>
+            </div>
+            <!-- Add Pagination 按鈕-->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows 方向-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- 關於書店 -->
+        <section id="section-1" class="padding-30px">
+            <div class="section-container margin-0-auto">
+                <article class="section-1-card d-flex">
+                    <img src="https://live.staticflickr.com/65535/49762912368_e755fedb2c_o.jpg" alt="04-section01-01.jpg"
+                        class="img">
+                    <div class="text-mask text-padding-0-30px text-align-justify">
+                        <h1>關於掀海風團隊</h1>
+                        <li>【苑裡掀海風】團隊，由苑裡返鄉青年、異鄉遊子、外地長大的大學生、在地友善小農、藺編婦女組成。</li>
+                        <li>有共同的理想、熱愛苑裡，於在地環境抗爭結束後，選擇留下。從「反」到「返」，我們開始了青年返回鄉土的社會實踐，從地方的藺草產業復育、青年培力一直到在地公共事務的討論平台串連，希望迎接更多進鄉／返鄉的青年參與地方草根民主的實踐，經營在地共生共存的社群，一起深耕在地。
+                        </li>
+                    </div>
+                </article>
+                <article class="section-1-card d-flex">
+                    <img src="https://miro.medium.com/max/1400/0*r6ExEHx5HlzxE1FS" alt="04-section01-02.jpg"
+                        class="img">
+                    <div class="text-mask text-padding-0-30px text-align-justify">
+                        <h1>掀冊店理念</h1>
+                        <p>2018年核心成員出資籌設苑裡第一家獨立書店，希望把自己種下，開一間「掀冊店」，翻土與翻書，種成一畝文化田。讓在地的孩子、在地的人們，可以從這間小小的書店，獲得滿滿的精神糧食，也讓外地的朋友，透過書店，閱讀苑裡的風土與人情。
+                        </p>
+                        <h6>圖片來源：生命力新聞 Dec 3,2018 報導：苑裡掀海風 掀起小鎮新希望</h6>
+                    </div>
+                </article>
+                <article class="section-1-card d-flex">
+                    <img src="https://live.staticflickr.com/65535/49762912368_e755fedb2c_o.jpg" alt=""
+                        class="img">
+                    <div class="text-mask text-padding-0-30px text-align-justify">
+                        <h1>經營項目</h1>
+                        <li>苑裡深度小旅行規劃</li>
+                        <li>藺草編織ＤＩＹ教學</li>
+                        <li>青年返鄉／進鄉經驗交流</li>
+                        <li>地方誌／刊物記錄在地、編輯</li>
+                        <li>特殊專長苑裡換宿（北房1356）</li>
+                        <li>友善農業援農活動</li>
+                        <li>獨立書店策展、藝文活動、食農教育、音樂演出（掀冊店）</li>
+                        <li>活動空間包場</li>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- 書店活動 -->
+        <section id="section-2" class="padding-30px w-100">
+            <div class="section-container margin-0-auto">
+                <nav class="nav-2">
+                    <a href="#section-2-1" style="text-decoration:none;">
+                        <div id="nav-2-btn-1" class="nav-2-btn active">一月串聯</div>
+                    </a>
+                    <a href="#section-2-2" style="text-decoration:none;">
+                        <div id="nav-2-btn-2" class="nav-2-btn">二月串聯</div>
+                    </a>
+                    <a href="#section-2-3" style="text-decoration:none;">
+                        <div id="nav-2-btn-3" class="nav-2-btn">三月串聯</div>
+                    </a>
+                </nav>
+                <div class="nav-2-contain">
+                    <div id="#section-2-1" class="nav-2-tab active">
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="https://live.staticflickr.com/65535/49783967797_2871994379_b.jpg" alt="05_書店串聯-一月份_01">
+                            <div class="nav-2-text">
+                                <h1>01/12 〈鬼才製造所：倫敦〉</h1>
+                                <br>講者｜郭令儀：倫敦時裝學院畢業（London College of Fashion）
+                                <br>簡介｜倫敦，這座迷人的城市，到底是怎麼孕育出無數設計鬼才、時尚設計大師的呢？除了多采多姿的倫敦生活，講者也會從豐富的工作經歷中，分享電視、電影、廣告、平面拍攝等造型設計工作的眉眉角角，帶大家一窺時尚產業的秘辛！
+                            </div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="https://live.staticflickr.com/65535/49783984757_f539c0e5a8_b.jpg" alt="05_書店串聯-一月份_02">
+                            <div class="nav-2-text">
+                                <h1>01/17 〈報瑞典的料〉</h1>
+                                <br>講者｜蔡佳娟：瑞典西部大學國際政治系（Högskolan Väst Internationell Politik o Ekonomi）
+                                <br>簡介｜Ikea、諾貝爾獎、社會福利，除了這些，您知道瑞典還有哪些傲人之處嗎？別再瑞士、瑞典傻傻分不清楚，趕快來聽聽正在瑞典求學的講者報瑞典的料，分享在這個令人稱羨的異鄉唸書生活，會遭遇到哪些文化衝擊，一起來揭開北歐國度的神秘面紗！
+                            </div>
+                        </article>
+                    </div>
+                    <div id="#section-2-2" class="nav-2-tab">
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="https://live.staticflickr.com/65535/49783715321_95b18a2922_b.jpg" alt="05_書店串聯-二月份_01">
+                            <div class="nav-2-text">
+                                <h1>02/14 〈以搞笑看日本文化〉</h1>
+                                <br>講者｜邱昱翔：國立台北藝術大學戲劇碩士、大阪市立大學戲劇研究博士生
+                                <br>簡介｜「搞笑」，向來是調劑生活的良藥，搏君一笑，更反映生活、諷刺現實。近年來最夯的節目，莫過於美式單口喜劇《博恩夜夜秀》、stand up 脫口秀等節目。然而，其實在台灣早有發展已久的日式單口喜劇表演，本場講座將以「漫才」、「大喜利」等日本傳統的搞笑形式切入，漫談日本文化，邀請觀眾們笑看日本！
+                            </div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="https://live.staticflickr.com/65535/49783724766_99cb6a45d3_b.jpg" alt="05_書店串聯-二月份_02">
+                            <div class="nav-2-text">
+                                <h1>02/22 〈在世界最古老的大學：荷蘭萊頓大學唸書與生活〉</h1>
+                                <br>講者｜康舒雅：荷蘭萊頓大學批判歐亞文化襲產研究所（Critical Heritage Studies in Europe and Asia）
+                                <br>簡介｜荷蘭萊頓大學，不僅是荷蘭歷史最悠久的頂尖大學，更是享譽歐洲、培育無數人類史上重要文史學家、科學家的搖籃笛卡爾正是在萊頓發表了「我思故我在」的劃時代鉅作。想知道跟笛卡爾漫步在同個校園中讀書、研究、生活是什麼感覺嗎？且聽優秀的講者分享她的觀察、所思及所想！
+                            </div>
+                        </article>
+                    </div>
+                    <div id="#section-2-3" class="nav-2-tab">
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="https://live.staticflickr.com/65535/49783191578_d0d045246e_b.jpg" alt="05_書展串聯-三月份_01">
+                            <div class="nav-2-text">
+                                <h1>02/29〈 國際兒童人權書籍與友善空間分享〉</h1>
+                                <br>講者｜林蔚昀：2013年榮獲波蘭文化部頒發波蘭文化功勛獎章、作者、波蘭文譯者
+                                <br>簡介｜一是翻譯《辛波絲卡》詩集的重量級波蘭文譯者，二是道出所有媽媽心聲的《憤世媽媽》作者，三是位職業母親，多重身份的林蔚昀，將帶來最新著作，並分享他拜訪各國所見過的兒童圖書館、獨立書店等友善空間，還有近期翻譯的系列兒童人權好書，藉國外經驗拓展國際視野之餘，也希望和大家一起討論，如何能讓台灣的閱讀環境更好！
+                            </div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="https://live.staticflickr.com/65535/49783195618_e50d5a63ce_b.jpg" alt="05_書展串聯-三月份_02">
+                            <div class="nav-2-text">
+                                <h1>03/07〈學芬筆記：我在「教育烏托邦」芬蘭的觀察與反思〉</h1>
+                                <br>講者｜黃致瑋：政大教育研究所，芬蘭圖爾庫大學教育學院交換生（Faculty of Education, University of Turku）
+                                <br>簡介｜一提到北歐國家，多數人立刻聯想到完善的福利和教育制度，其中，芬蘭更有「教育烏托邦」的美稱，也是台灣在討論教育改革時，最常借鏡的國家之一。然而，芬蘭的教育現場，究竟是什麼模樣呢？國際書展好評加映場，邀請年輕的教育工作者，分享他在芬蘭的第一線觀察，共同反思台灣在實行108新課綱時如何應變與調整。
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 關注議題 -->
+        <section id="section-3" class="section-3 w-100 vh-100 background-size-cover" >
+            <div class="section-3-mask mask w-100 h-100  d-flex justify-content-center align-item-center">
+                <article class="section-parallax-card d-flex ustify-content-space-between">
+                    <img src="https://live.staticflickr.com/65535/49764630617_1c54bfa996_o.jpg" alt="06_section03-02.jpg"
+                        class="section-3-img background-size-cover">
+                    <div class="section-3-text text-align-justify text-padding-0-30px opacity">
+                        <br>
+                        苑裡消費市場建於明治42年4月（西元1909年），苑裡區役場毗連苑裡消費市場北側，昭和12年西元1937年9月新建苑裡役場於為公路17號，原區役場建築併入苑裡消費市場。
+                        <br>
+                        <br>
+                        苑裡百年老市場是苑裡人的共同記憶，2018年9月14日凌晨發生火災，燒燬109年的歷史、文化、記憶，生活和生計，原消費市場建築幾乎全毀。
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- 書店菜單 -->
+        <section id="section-4" class="padding-30px w-100 vh-100" style="background-color: pink;">
+            <div class="section-container margin-0-auto"></div>
+        </section>
+    </main>
+    <footer id="footer" class="padding-30px">
+        <div class="section-container margin-0-auto"></div>
+    </footer>
+    <div class="scrolltop">
+        <img src="https://img.icons8.com/plasticine/100/000000/double-up.png" alt="02-scrolltop.png">
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./03-js/01-template.js"></script>
+    <script src="./03-js/02-index.js"></script>
+
+
+</body>
+
+</html>

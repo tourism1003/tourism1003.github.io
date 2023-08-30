@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.w-calc-100-50px {
+    width: calc(100% - 50px);
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.border-radius {
+    border-radius: 10px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-container {
+    flex-direction: row;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+#nav-1 {
+    width: 350px;
+    height: 100vh;
+    float: left;
+    background-color: #013D64;
+    position: fixed;
+    z-index: 999999999;
+}
+
+.nav-container {
+    width: 200px;
+}
+
+.logo {
+    height: 200px;
+    margin: 75px 0 30px 0;
+}
+
+#hamburger {
+    display: none;
+}
+
+.buttons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    height: 50px;
+    background-color: #597D6E;
+    line-height: 50px;
+    padding: 0 0 0 10px;
+    color: white;
+    margin: 0 0 30px 0;
+    width: 200px;
+}
+
+.button.active {
+    background-color: #8A732F;
+    border: solid 3px white;
+    line-height: 46px;
+}
+
+main {
+    width: calc(100% - 350px);
+    float: right;
+    background-color: #BDBDBD;
+}
+
+.section-container {
+    width: 1110px;
+    height: 100%;
+}
+
+footer {
+    width: calc(100% - 350px);
+    height: 50vh;
+    float: right;
+    background-color: #757575;
+}
+
+@media ( max-width:1500px) {
+    #nav-1 {
+        left: -300px;
+    }
+    #nav-1:hover {
+        left: 0;
+    }
+    main {
+        width: calc(100% - 50px);
+    }
+    footer {
+        width: calc(100% - 50px);
+    }
+}
+
+@media ( max-width:1280px) {
+    #nav-1 {
+        width: 100%;
+        height: 150px;
+        left: 0;
+    }
+    .nav-container {
+        width: 1110px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin: 25px 0 25px 0;
+        float: left;
+        border-radius: 5px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        float: right;
+    }
+    .button {
+        width: 150px;
+        height: 100px;
+        padding: unset;
+        text-align: center;
+        line-height: 100px;
+        margin: 25px 0 25px 30px;
+        border-radius: 5px;
+    }
+    .button.active {
+        line-height: 95px;
+    }
+    main {
+        width: 100%;
+        float: none;
+    }
+    footer {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media ( max-width:1140px) {
+    #nav-1 {
+        height: 100px;
+    }
+    .nav-container {
+        width: 730px;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin: 10px 0 10px 0;
+    }
+    .button {
+        width: 100px;
+        height: 80px;
+        margin: 10px 0 10px 30px;
+        line-height: 80px;
+    }
+    .button.active {
+        line-height: 75px;
+    }
+    .section-container {
+        width: 730px;
+    }
+}
+
+@media ( max-width:768px) {
+    #nav-1 {
+        bottom: 0;
+        height: 80px;
+    }
+    .nav-container {
+        width: 100%;
+    }
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    #hamburger {
+        display: block;
+        float: right;
+        width: 60px;
+        height: 60px;
+        margin: 10px 0 0 0;
+    }
+    .buttons {
+        clear: right;
+        display: none;
+        position: relative;
+        bottom: 460px;
+    }
+    .hamburger:hover~.buttons {
+        display: block;
+    }
+    .buttons:hover {
+        display: block;
+    }
+    .button {
+        float: unset;
+        width: 150px;
+        height: 80px;
+        line-height: 80px;
+        margin: 0;
+        border-radius: unset;
+    }
+    .button.active {
+        line-height: 73px;
+    }
+    
+    .section-container {
+        width: 100%;
+    }
+}
+
+.scrolltop {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.scrolltop.active {
+    opacity: 1;
+}

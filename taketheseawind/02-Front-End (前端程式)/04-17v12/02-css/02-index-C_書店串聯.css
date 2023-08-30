@@ -1,0 +1,136 @@
+#section-2{
+    height: 100vh;
+}
+
+.nav-2{
+    height: 150px;
+    background-color: #013D64;
+    display: flex;
+}
+
+.nav-2-btn{
+    width: 150px;
+    height: 100px;
+    background-color: #597D6E;
+    line-height: 100px;
+    text-align:center;
+    color: white;
+    margin: 25px 30px 25px 0;
+}
+
+.nav-2-btn.active{
+    line-height: 96px;
+    background-color: #8A732F;
+    border: solid 3px white;
+}
+
+.nav-2-contain{
+    width: 100%;
+}
+
+.nav-2-tab{
+    display: none;
+}
+
+.nav-2-tab.active{
+    display: block;
+}
+
+.nav-2-card{
+    width: 50%;
+    height: calc(100vh - 240px);
+    float: left;
+}
+
+.nav-2-img{
+    width: 100%;
+    height: 40%;
+    background-size: contain;
+    background-position: center;
+    background-color: violet;
+}
+
+.nav-2-text{
+    width: 100%;
+    height: 60%;
+    background-color: #DED9C3;
+    padding: 30px;
+}
+
+@media ( max-width:1280px) {
+    .nav-2 {
+        height: 128px;
+    }
+
+    .nav-2-btn{
+        height: 85px;
+        width: 128px;
+        line-height: 85px;
+        margin: 21.5px 30px 21.5px 0;
+    }
+
+    .nav-2-btn.active{
+        line-height: 79px;
+    }
+
+    .nav-2-card{
+        height: calc(100vh - 188px);
+    }
+}
+
+@media ( max-width:1140px) {
+    .nav-2 {
+        height: 114px;
+    }
+
+    .nav-2-btn{
+        height: 76px;
+        width: 114px;
+        line-height: 76px;
+        margin: 19px 30px 19px 0;
+    }
+
+    .nav-2-btn.active{
+        line-height: 70px;
+    }
+
+    .nav-2-card{
+        height: calc(100vh - 174px);
+    }
+
+    .nav-2-text{
+        padding: 10px;
+    }
+}
+
+@media ( max-width:768px) {
+    .nav-2 {
+        height: 77px;
+    }
+
+    .nav-2-btn{
+        height: 50px;
+        width: 77px;
+        line-height: 50px;
+        margin: 13.5px 30px 13.5px 0;
+    }
+
+    .nav-2-btn.active{
+        line-height: 44px;
+    }
+    
+    .nav-2-card{
+        width: 100%;
+        height: calc((100vh - 200px)/2);
+    }
+
+    .nav-2-img{
+        width: 30%;
+        height: 100%;
+    }
+
+    .nav-2-text{
+        width: 70%;
+        height: 100%;
+    }
+}

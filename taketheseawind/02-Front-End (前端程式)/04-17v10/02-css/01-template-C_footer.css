@@ -1,0 +1,47 @@
+/* footer */
+
+footer {
+    margin-left: 350px;
+    height: 50vh;
+    background-color: aqua;
+    border: solid 5px yellow;
+}
+
+.section-container {
+    width: 1110px;
+}
+
+@media(max-width:1500px) {
+    footer {
+        margin-left: 50px;
+        height: 39vh;
+    }
+}
+
+@media ( max-width:1280px) {
+    footer {
+        margin-left: 0;
+        height: 33vh;
+    }
+}
+
+@media ( max-width:1140px) {
+    footer {
+        height: 30vh;
+    }
+
+    .section-container {
+        width: 730px;
+    }
+}
+
+@media ( max-width:768px){
+    footer {
+        height: 20vh;
+        margin-bottom: 80px;
+    }
+
+    .section-container {
+        width: 100%;
+    }
+}

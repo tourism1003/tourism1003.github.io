@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            
+        }
+
+        .box.active{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $('.box').click(function(){
+            $('.box').toggleClass('active')
+        })
+
+        console.log($('.box').offset().top);
+        
+    </script>
+</body>
+
+</html>

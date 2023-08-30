@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_書店活動</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .padding-30px {
+            padding: 30px 0;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .margin-0-auto {
+            margin: 0 auto;
+        }
+
+        @media (max-width:1280px) {}
+
+        @media (max-width:1140px) {}
+
+        @media (max-width:768px) {}
+
+        .section-container {
+            width: 1110px;
+            border: solid 5px brown;
+        }
+
+        @media (max-width:1140px) {
+            .section-container {
+                width: 730px;
+            }
+        }
+
+        @media (max-width:768px) {
+            .section-container {
+                width: 100%;
+            }
+        }
+
+        #section-2 {
+            border: solid 5px yellow;
+            height: 100vh;
+        }
+
+        .nav-2 {
+            height: 150px;
+            background-color: #013D64;
+
+        }
+
+        .nav-2-tab {
+            border: solid 5px green;
+            display: none;
+        }
+
+        .nav-2-tab.active {
+            display: block;
+        }
+
+        .nav-2-card {
+            height: calc(100vh - 240px);
+            width: 25%;
+            border: solid 5px pink;
+            float: left;
+        }
+
+        @media (max-width:768px) {
+            #section-2 {
+                height: unset;
+            }
+
+            .nav-2-card {
+                width: 100%;
+                height: calc(100vh/4);
+            }
+        }
+
+        .nav-2-card .nav-2-img{
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="section-2" class="padding-30px w-100">
+        <div class="section-container margin-0-auto">
+            <nav class="nav-2"></nav>
+            <div class="nav-2-contain">
+                <div id="section-2-1" class="nav-2-tab active">
+                    <article class="nav-2-card d-flex flex-wrap-wrap">
+                        <img class="nav-2-img" src="" alt="">
+                        <div class="nav-2-text">活動1</div>
+                    </article>
+                    <article class="nav-2-card d-flex flex-wrap-wrap">
+                        <img class="nav-2-img" src="" alt="">
+                        <div class="nav-2-text">活動1</div>
+                    </article>
+                    <article class="nav-2-card d-flex flex-wrap-wrap">
+                        <img class="nav-2-img" src="" alt="">
+                        <div class="nav-2-text">活動1</div>
+                    </article>
+                    <article class="nav-2-card d-flex flex-wrap-wrap">
+                        <img class="nav-2-img" src="" alt="">
+                        <div class="nav-2-text">活動1</div>
+                    </article>
+                </div>
+                <div id="section-2-1" class="nav-2-tab">
+                    <article class="nav-2-card d-flex flex-wrap-wrap">
+                        <img class="nav-2-img" src="" alt="">
+                        <div class="nav-2-text">活動1</div>
+                    </article>
+                </div>
+                <div id="section-2-1" class="nav-2-tab">
+                    <article class="nav-2-card d-flex flex-wrap-wrap">
+                        <img class="nav-2-img" src="" alt="">
+                        <div class="nav-2-text">活動1</div>
+                    </article>
+                </div>
+                <div id="section-2-1" class="nav-2-tab">
+                    <article class="nav-2-card d-flex flex-wrap-wrap">
+                        <img class="nav-2-img" src="" alt="">
+                        <div class="nav-2-text">活動1</div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

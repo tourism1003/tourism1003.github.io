@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-index</title>
+
+    <link rel="stylesheet" href="./02-css/01-template-A_nav+scrolltop.css">
+    <link rel="stylesheet" href="./02-css/01-template-C_footer.css">
+    <link rel="stylesheet" href="./02-css/01-template-B_button.css">
+    <link rel="stylesheet" href="./02-css/02-index-A_banner.css">
+    <link rel="stylesheet" href="./02-css/02-index-B_關於書店.css">
+    <link rel="stylesheet" href="./02-css/02-index-C_書店活動.css">
+    <link rel="stylesheet" href="./02-css/02-index-D_關注議題.css">
+    <link rel="stylesheet" href="./02-css/02-index-E_書店菜單.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav-1">
+            <div class="nav-container margin-0-auto">
+                <div class="logo cursor-pointer">
+                    <img src="https://live.staticflickr.com/65535/49756307122_b10626fdb5_o.png" alt=""
+                        class="h-100 border-radius">
+                </div>
+                <button id="hamburger" class="hamburger" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <ul id="menu" class="menu">
+                    <li class="active">
+                        <a href="#section-1" style="text-decoration:none;">
+                            <div class="button border-radius">關於書店</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section-2" style="text-decoration:none;">
+                            <div class="button border-radius">書店活動</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section-3" style="text-decoration:none;">
+                            <div class="button border-radius">關注議題</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#section-4" style="text-decoration:none;">
+                            <div class="button border-radius">書店菜單</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer" style="text-decoration:none;">
+                            <div class="button border-radius">找到書店</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Swiper 輪播-->
+        <div id="swiper" class="swiper-container w-100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://live.staticflickr.com/65535/49760025487_d8383e741a_o.jpg" alt=""
+                        class="w-100 h-100 background-size-cover">
+                </div>
+                <div class="swiper-slide"><img src="https://live.staticflickr.com/65535/49759831641_4dfc732191_o.jpg"
+                        alt="" class="w-100 h-100 background-size-cover">
+                </div>
+                <div class="swiper-slide"><img src="https://live.staticflickr.com/65535/49760158962_40166e9a6e_o.jpg"
+                        alt="" class="w-100 h-100 background-size-cover">
+                </div>
+            </div>
+            <!-- Add Pagination 按鈕-->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows 方向-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- 關於書店 -->
+        <section id="section-1" class="padding-30px w-100 vh-100">
+            <div class="section-container margin-0-auto">
+                <article class="section-1-card d-flex">
+                    <img src="https://live.staticflickr.com/65535/49762912368_e755fedb2c_o.jpg" alt=""
+                        class="img background-size-cover">
+                    <div class="text-mask text-padding-0-30px text-align-justify">
+                        <h1>關於掀海風團隊</h1>
+                        <li>【苑裡掀海風】團隊，由苑裡返鄉青年、異鄉遊子、外地長大的大學生、在地友善小農、藺編婦女組成。</li>
+                        <li>有共同的理想、熱愛苑裡，於在地環境抗爭結束後，選擇留下。從「反」到「返」，我們開始了青年返回鄉土的社會實踐，從地方的藺草產業復育、青年培力一直到在地公共事務的討論平台串連，希望迎接更多進鄉／返鄉的青年參與地方草根民主的實踐，經營在地共生共存的社群，一起深耕在地。
+                        </li>
+                    </div>
+                </article>
+                <article class="section-2-card d-flex">
+                    <div class="text-mask text-padding-0-30px text-align-justify">
+                        <h1>掀冊店理念</h1>
+                        <p>2018年核心成員出資籌設苑裡第一家獨立書店，希望把自己種下，開一間「掀冊店」，翻土與翻書，種成一畝文化田。讓在地的孩子、在地的人們，可以從這間小小的書店，獲得滿滿的精神糧食，也讓外地的朋友，透過書店，閱讀苑裡的風土與人情。
+                        </p>
+                        <h6>圖片來源：生命力新聞 Dec 3,2018 報導：苑裡掀海風 掀起小鎮新希望</h6>
+                    </div>
+                    <img src="https://miro.medium.com/max/1400/0*r6ExEHx5HlzxE1FS" alt=""
+                        class="img background-size-cover">
+                </article>
+                <article class="section-3-card d-flex">
+                    <img src="https://live.staticflickr.com/65535/49762912368_e755fedb2c_o.jpg" alt=""
+                        class="img background-size-cover">
+                    <div class="text-mask text-padding-0-30px text-align-justify">
+                        <h1>經營項目</h1>
+                        <li>苑裡深度小旅行規劃</li>
+                        <li>藺草編織ＤＩＹ教學</li>
+                        <li>青年返鄉／進鄉經驗交流</li>
+                        <li>地方誌／刊物記錄在地、編輯</li>
+                        <li>特殊專長苑裡換宿（北房1356）</li>
+                        <li>友善農業援農活動</li>
+                        <li>獨立書店策展、藝文活動、食農教育、音樂演出（掀冊店）</li>
+                        <li>活動空間包場</li>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- 書店活動 -->
+        <section id="section-2" class="padding-30px w-100">
+            <div class="section-container h-100 margin-0-auto">
+                <nav class="nav-2">
+                    <a href="#section-2-1" style="text-decoration:none;">
+                        <div id="nav-2-btn-1" class="nav-2-btn active">一月活動</div>
+                    </a>
+                    <a href="#section-2-2" style="text-decoration:none;">
+                        <div id="nav-2-btn-2" class="nav-2-btn">二月活動</div>
+                    </a>
+                    <a href="#section-2-3" style="text-decoration:none;">
+                        <div id="nav-2-btn-3" class="nav-2-btn">三月活動</div>
+                    </a>
+                    <a href="#section-2-4" style="text-decoration:none;">
+                        <div id="nav-2-btn-4" class="nav-2-btn">四月活動</div>
+                    </a>
+                </nav>
+                <div class="nav-2-contain">
+                    <div id="#section-2-1" class="nav-2-tab active">
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text">活動1</div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text"></div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text">活動1</div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text"></div>
+                        </article>
+                    </div>
+                    <div id="#section-2-2" class="nav-2-tab">
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text">活動2</div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text"></div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text">活動2</div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text"></div>
+                        </article>
+                    </div>
+                    <div id="#section-2-3" class="nav-2-tab">
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text">活動3</div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text"></div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text">活動3</div>
+                        </article>
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="" alt="">
+                            <div class="nav-2-text"></div>
+                        </article>
+                    </div>
+                    <div id="#section-2-4" class="nav-2-tab">
+                        <article class="nav-2-card d-flex flex-wrap-wrap">
+                            <img class="nav-2-img" src="https://live.staticflickr.com/65535/49776199498_ced9accfb3_k.jpg" alt="">
+                            <div class="nav-2-text">
+                                <br>＃搶救童年 二手童書大甩賣
+                                <br>時間：即日起至四月底
+                                <br>（書店暫停開放期間，將會改為線上書櫃形式）
+                                <br>兒童區玩具定時消毒
+                                <br>二手童書繪本三折起
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 關注議題 -->
+        <section id="section-3" class="section-3 w-100 vh-100 background-size-cover">
+            <div class="section-3-mask mask w-100 h-100  d-flex justify-content-center align-item-center">
+                <article class="section-parallax-card d-flex ustify-content-space-between">
+                    <img src="https://live.staticflickr.com/65535/49764630617_1c54bfa996_o.jpg" alt=""
+                        class="section-3-img background-size-cover">
+                    <div class="section-3-text text-align-justify text-padding-0-30px opacity">
+                        <br>
+                        苑裡消費市場建於明治42年4月（西元1909年），苑裡區役場毗連苑裡消費市場北側，昭和12年西元1937年9月新建苑裡役場於為公路17號，原區役場建築併入苑裡消費市場。
+                        <br>
+                        <br>
+                        苑裡百年老市場是苑裡人的共同記憶，2018年9月14日凌晨發生火災，燒燬109年的歷史、文化、記憶，生活和生計，原消費市場建築幾乎全毀。
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- 書店菜單 -->
+        <section id="section-4" class="padding-30px w-100 vh-100" style="background-color: pink;">
+            <div class="section-container margin-0-auto"></div>
+        </section>
+    </main>
+    <footer id="footer" class="padding-30px">
+        <div class="section-container margin-0-auto"></div>
+    </footer>
+    <div class="scrolltop">
+        <img src="https://img.icons8.com/plasticine/100/000000/double-up.png" alt="">
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./03-js/01-template.js"></script>
+    <script src="./03-js/02-index.js"></script>
+
+
+</body>
+
+</html>
